@@ -776,12 +776,7 @@
 <p>关于更详细的什么是NeRF，我们接下来看看NeRF的开山之作，通过阅读这篇论文，看看到底什么是NeRF。由于这属于整个NeRF SLAM的基础，故此，此处做更深入的理解与学习。</p> 
 <p></p> 
 <h3 id="NeRF"><a name="t1"></a>NeRF</h3> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;EsMDXBuB-1702972526455&quot;}}"> 
-  <iframe id="EsMDXBuB-1702972526455" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player.html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>NeRF：Representing Scenes as Neural Radiance <a href="https://so.csdn.net/so/search?q=Fields&amp;spm=1001.2101.3001.7020" target="_blank" class="hl hl-1" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=Fields&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;Fields\&quot;}&quot;}" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=Fields&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;Fields\&quot;}&quot;}" data-tit="Fields" data-pretit="fields">Fields</a> for View Synthesis</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2003.08934.pdf" rel="nofollow" title="NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</a></p> 
 <p><a href="https://www.matthewtancik.com/nerf" rel="nofollow" title="论文主页">论文主页</a></p> 
 <p>论文采用的只是fully-connected（non-convolutional）deep network，也就是只是MLP而不是CNN。论文中一个示意的网络结构如下：</p> 
@@ -888,10 +883,7 @@
 <h3 id="Instant-NGP"><a name="t4"></a>Instant-NGP</h3> 
 <p><a class="link-info" href="https://dl.acm.org/doi/pdf/10.1145/3528223.3530127" rel="nofollow" title="Instant neural graphics primitives with a multiresolution hash encoding">Instant neural graphics primitives with a multiresolution hash encoding</a></p> 
 <p><a class="link-info" href="https://nvlabs.github.io/instant-ngp/" rel="nofollow" title="论文主页">论文主页</a></p> 
-<div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;zCRPIHLs-1703742716629&quot;}}"> 
- <iframe id="zCRPIHLs-1703742716629" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(1).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
- <p>Instant neural graphics <span class="edu-hl hl hl-1" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;word\&quot;:\&quot;primitives\&quot;}&quot;}" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;word\&quot;:\&quot;primitives\&quot;}&quot;}" data-tit="primitives" data-pretit="primitives">primitives</span> with a multiresolution hash encoding (1)</p> 
-</div> 
+
 <p>下面介绍的比较有意思的两个工作Orbeez-SLAM与GO-SLAM都是基于Instan-NGP来实现实时的渲染的，为此，深入了解一下这个工作~</p> 
 <p>这是英伟达一个工作，最快可以将训练 NeRF 模型缩至 5 秒。而这一实现这是来自于论文所提出的多分辨率哈希编码技术（multiresolution hash encoding）。论文在4 个代表性任务中对多分辨率哈希编码技术进行验证，它们分别是<strong>神经辐射场（NeRF）、十亿（Gigapixel）像素图像近似、神经符号距离函数（SDF）和神经辐射缓存（NRC）</strong>。每个场景都使用了 tiny-<span class="words-blog hl-git-1" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.10283&quot;,&quot;extra&quot;:&quot;{\&quot;words\&quot;:\&quot;cuda\&quot;}&quot;}" data-tit="cuda" data-pretit="cuda">cuda</span>-nn 框架训练和渲染具有多分辨率哈希输入编码的 MLP。</p> 
 <p class="img-center"><img alt="" height="648" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/95c66e635bd5a43b28d17290cc23e95a.png" width="1050"></p> 
@@ -919,10 +911,7 @@
 <h3 id="RO-MAP"><a name="t5"></a>RO-MAP</h3> 
 <p><a class="link-info" href="https://arxiv.org/pdf/2304.05735.pdf" rel="nofollow" title="RO-MAP：Real-Time Multi-Object Mapping with Neural Radiance Fields">RO-MAP：Real-Time Multi-Object Mapping with Neural Radiance Fields</a></p> 
 <p><a class="link-info" href="https://github.com/XiaoHan-Git/RO-MAP" title="论文主页">论文主页</a></p> 
-<div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;tlsg1FDC-1703685866057&quot;}}"> 
- <iframe id="tlsg1FDC-1703685866057" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(2).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
- <p>RO-MAP：Real-Time Multi-Object Mapping with Neural Radiance Fields</p> 
-</div> 
+
 <p>第一个不依赖于3D先验的单目多对象建图pipeline。同时可以定位object的位置以及渲染。（由于不是相机的自定位只是物体的定位，所以不归为下面SLAM中，但这其实也属于SLAM的一种，Object-SLAM，利用语义等信息来定位以及重建物体）。对于每个检测的物体都单独每个目标都单独训练一个MLP，建立物体级NeRF地图。</p> 
 <p class="img-center"><img alt="" height="433" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/0e0a066caa6031ec38aecbad39bbd2cc.png" width="513"></p> 
 <p>整个框架分为物体级SLAM和物体级NeRF两部分。物体级SLAM基于<a href="https://so.csdn.net/so/search?q=ORB-SLAM2&amp;spm=1001.2101.3001.7020" target="_blank" class="hl hl-1" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=ORB-SLAM2&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;ORB-SLAM2\&quot;}&quot;}" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=ORB-SLAM2&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;ORB-SLAM2\&quot;}&quot;}" data-tit="ORB-SLAM2" data-pretit="orb-slam2">ORB-SLAM2</a>实现，识别目标没有使用学习方法，而是使用一种轻量级的手工方法来定位。还采用一种基于稀疏点云的语义信息和统计信息的方法来自动关联多视图观测与目标地标。在估计 了物体级SLAM的边界框和相机姿态后，就可以用NeRF学习物体的稠密几何形状。每当检 测到一个新的对象实例，初始化一个新的NeRF模型（也是用Instant-NGP）。注意，这里的 NeRF不重建整个场景，而是只表示单个对象，也就是可以使用轻量级网络加快训练速度。</p> 
@@ -935,22 +924,14 @@
 <h3 id="vMAP"><a name="t6"></a>vMAP</h3> 
 <p><a class="link-info" href="https://arxiv.org/pdf/2302.01838.pdf" rel="nofollow" title="vMAP：Vectorised Object Mapping for Neural Field SLAM">vMAP：Vectorised Object Mapping for Neural Field SLAM</a></p> 
 <p><a class="link-info" href="https://kxhit.github.io/vMAP" rel="nofollow" title="论文主页">论文主页</a></p> 
-<div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;nHT6OH9S-1703685981790&quot;}}"> 
- <iframe id="nHT6OH9S-1703685981790" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(3).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
- <p>vMAP：Vectorised Object Mapping for Neural Field SLAM</p> 
-</div> 
+
 <p></p> 
 <p>这也是一篇物体级NeRF SLAM方案，同样是为每个目标单独分配一个MLP。vMAP的输入包括RGB图像、深度图、位姿、实例分割结果。位姿由ORB-SLAM3计算， 实例分割由Detic计算，再根据实例分割区域对RGB和深度图进行采样，之后就可以使用 NeRF进行训练和渲染。此外还需要执行一个帧间对象关联，包括语义一致性关联（类别 相同）和空间一致性关联（位置相同），用来判断是否是同一个物体。</p> 
 <p>vMAP处理的一个场景最多可以有50个独立的物体，并且有以5HZ的输出更新map。性能上挺不错的~同时论文也展示了在单个GPU下同时训练及优化大量的MLP object model。</p> 
 <p class="img-center"><img alt="" height="571" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/6d33b08aaa09e9bb203056dbac46ebce.png" width="972"></p> 
 <p></p> 
 <h3 id="Point-NeRF"><a name="t7"></a>Point-NeRF</h3> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;N6vg1p3k-1702972543438&quot;}}"> 
-  <iframe id="N6vg1p3k-1702972543438" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(4).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>Point-NeRF：Point-based Neural Radiance Fields</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2201.08845.pdf" rel="nofollow" title="Point-NeRF：Point-based Neural Radiance Fields">Point-NeRF：Point-based Neural Radiance Fields</a></p> 
 <p><a href="https://xharlie.github.io/projects/project_sites/pointnerf/" rel="nofollow" title="论文主页">论文主页</a></p> 
 <p>传统的NeRF渲染需要很长的时间，因为要求MLP把整个图像的一切都渲染出来，需要对每个场景进行优化。而另一方面，deep multi-view stereo方法可以较快进行场景的重建，因此Point-NeRF就是结合MVS和NeRF，过neural features相关联，使用neural 3D point cloud来渲染，实现训练时间快30倍。</p> 
@@ -971,12 +952,7 @@
 <p class="img-center"><img alt="" height="258" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/9824f83abf3813eb71dcd54be7dec1b2.png" width="535"></p> 
 <p></p> 
 <h3 id="NeRF-SLAM%C2%A0"><a name="t8"></a>NeRF-SLAM&nbsp;</h3> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;KhGffdal-1702972556161&quot;}}"> 
-  <iframe id="KhGffdal-1702972556161" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(5).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>NeRF-SLAM：Real-Time Dense Monocular SLAM with Neural Radiance Fields</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2210.13641.pdf" rel="nofollow" title="NeRF-SLAM：Real-Time Dense Monocular SLAM with Neural Radiance Fields">NeRF-SLAM：Real-Time Dense Monocular SLAM with Neural Radiance Fields</a></p> 
 <p><a href="https://github.com/ToniRV/NeRF-SLAM" title="论文主页">论文主页</a></p> 
 <p>这是第一个实现基于dense SLAM与NeRF的环境重建的pipeline，但它的NeRF部分其实也是做mapping的工作。</p> 
@@ -985,10 +961,7 @@
 <p>整个算法的流程如下图所示</p> 
 <p class="img-center"><img alt="" height="581" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/55ab50be2f4e2a40b6ecbdfb6b8de1f5.png" width="412"></p> 
 <p>NeRF-SLAM的输入是连续的单目序列，采用Droid-SLAM （<a class="link-info" href="https://github.com/princeton-vl/DROID-SLAM" title="DROID-SLAM：Deep Visual SLAM for Monocular, Stereo and RGB-D Cameras">DROID-SLAM：Deep Visual SLAM for Monocular, Stereo and RGB-D Cameras</a>，此处不展开介绍，下方给出该论文的视频）。Droid-SLAM的流程种也就是包括了图中的这个ConvGRU来估计稠密光流和光流权重，之后就是一个稠密BA问题估计位姿和深度，并将系统方程线性化为近似相机/深度箭头块状的稀疏Hseeian矩阵（以及舒尔补等处理了）最后把图像、位姿、深度图、位姿不确定性、深度不确定性全部馈送给NeRF进行训练。</p> 
-<div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;Rem1KPeJ-1703825040620&quot;}}"> 
- <iframe id="Rem1KPeJ-1703825040620" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(6).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
- <p>DROID-SLAM：Deep <span class="words-blog hl-git-1" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.10283&quot;,&quot;extra&quot;:&quot;{\&quot;words\&quot;:\&quot;Visual\&quot;}&quot;}" data-tit="Visual" data-pretit="visual">Visual</span> SLAM for Monocular, Stereo and RGB-D Cameras</p> 
-</div> 
+
 <p></p> 
 <p>定量实验的结果如下。光度学误差用PSNR来对比，几何误差用L1，所谓的L1是：we use the L1 depth error between the estimated and the ground-truth depth-maps as a proxy for geometric accuracy (Depth L1)，应该也就是深度精度评估中的depth error了</p> 
 <p class="img-center"><img alt="" height="502" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/6fc5e224cc81488a5c1d08951976f9ff.png" width="903"></p> 
@@ -1004,10 +977,7 @@
 <h3 id="SMERF"><a name="t9"></a>SMERF</h3> 
 <p><a href="https://arxiv.org/pdf/2312.07541.pdf" rel="nofollow" title="SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration">SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration</a></p> 
 <p><a href="https://smerf-3d.github.io/" rel="nofollow" title="论文主页">论文主页</a></p> 
-<div class="csdn-video-box"> 
- <iframe id="ourqYZzm-1703145478914" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(7).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
- <p>SMERF：Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Expl</p> 
-</div> 
+
 <p>该成果最主要的突破就是没有利用3D Gaussian Splatting（关于Gaussian Splatting请见下面介绍）技术就可以实现NeRF大场景在笔记本以及手机端的实时流式加载和渲染。主要是通过分层模型（a hierarchical model）与蒸馏训练（distillation training strategy）。&nbsp;</p> 
 <p>SMERF是以<a class="link-info" href="https://arxiv.org/pdf/2302.12249.pdf" rel="nofollow" title="Merf: Memory-efficient radiance fields for real-time view synthesis in unbounded scenes">Merf: Memory-efficient radiance fields for real-time view synthesis in unbounded scenes</a>为基础的，然后构建自主约束的MERF子模块的分层结构。由于还涉及到其他的结构，暂时理论部分看得比较迷糊，这里就先跳过了~</p> 
 <p>根据论文的描述，SMERF的提出有几个比较重要的研究基础：</p> 
@@ -1029,10 +999,7 @@
 <h3 id="Nerfies"><a name="t10"></a>Nerfies</h3> 
 <p><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Park_Nerfies_Deformable_Neural_Radiance_Fields_ICCV_2021_paper.pdf" rel="nofollow" title="Nerfies：Deformable Neural Radiance Fields">Nerfies：Deformable Neural Radiance Fields</a></p> 
 <p><a href="https://nerfies.github.io/" rel="nofollow" title="论文主页">论文主页</a></p> 
-<div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;bCXK8TOU-1703145531019&quot;}}"> 
- <iframe id="bCXK8TOU-1703145531019" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(8).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
- <p>Nerfies：Deformable Neural Radiance Fields</p> 
-</div> 
+
 <p>这是第一个可变形场景的NeRF（主要就是针对场景并不是刚体的，是可以形变的），如下图所示，就是从多个不同的视角下拍的图片，合成一个新的视角。这是通过continuous volumetric deformation field以及对应的elastic regularization来实现的。</p> 
 <p class="img-center"><img alt="" height="280" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/2961770407bdd046429c968a1e2e69c3.png" width="894"></p> 
 <p>Pipeline 方面应该就是在传统的NeRF前面多加了个code以及deformation field进而生成canonical（范式） 的表达，利用这个表达来反应不同的观测量。</p> 
@@ -1042,12 +1009,7 @@
 <p>与采用NeRF来进行mapping相反，这个类型的工作是使用NeRF反过来优化pose，但如果只是设计损失函数再梯度回传的话，定位精度应该很难和传统SLAM比。</p> 
 <p>Photorealistic and differentiable rendering of NeRF enables many applications such as direct pose optimization and training set expansion！</p> 
 <h3 id="iNeRF"><a name="t12"></a>iNeRF</h3> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;DFlepggM-1702972569572&quot;}}"> 
-  <iframe id="DFlepggM-1702972569572" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(9).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>INeRF：Inverting Neural Radiance Fields for Pose Estimation</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2012.05877.pdf" rel="nofollow" title="INeRF：Inverting Neural Radiance Fields for Pose Estimation">INeRF：Inverting Neural Radiance Fields for Pose Estimation</a></p> 
 <p><a href="https://yenchenlin.me/inerf/" rel="nofollow" title="论文主页">论文主页</a></p> 
 <p>本文就是使用NeRF来反过来优化位姿。通过image获取camera相对于3D 物体或者场景的6-DoF pose。通过NeRF渲染的图像与observed image的光度误差来计算位姿。</p> 
@@ -1085,23 +1047,13 @@
 <p class="img-center"><img alt="" height="541" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/de29dc2eebc5321e3c764c85e0417f7c.png" width="712"></p> 
 <p></p> 
 <h3 id="Loc-NeRF"><a name="t14"></a>Loc-NeRF</h3> 
-<div> 
- <div class="csdn-video-box"> 
-  <iframe id="UL7NDzpU-1702972587916" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(10).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>Loc-NeRF：Monte Carlo Localization using Neural Radiance Fields</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2209.09050.pdf" rel="nofollow" title="Loc-NeRF：Monte Carlo Localization using Neural Radiance Fields">Loc-NeRF：Monte Carlo Localization using Neural Radiance Fields</a></p> 
 <p><a class="link-info" href="https://github.com/MIT-SPARK/Loc-NeRF" title="论文主页">论文主页</a></p> 
 <p>这是将Monte Carlo定位与NeRF结合的一篇工作。大部分的NeRF-based 的定位方法需要较好的初值位姿，这其实是很搞笑的，一个定位系统每次计算都需要一个良好的位姿作为输入（甚至ground truth pose），那就没有意义了。因此本文采用Monte Carlo来提供NeRF-based localization所需要的初值。由于这篇论文本质上就是多加了蒙特卡洛而已，所以理论甚至连图都没有可以展示的，也没有跟其他算法对比定位的精度~</p> 
 <p></p> 
 <h3 id="NeRF-VINS"><a name="t15"></a>NeRF-VINS</h3> 
-<div> 
- <div class="csdn-video-box"> 
-  <iframe id="vqnZRM1f-1702972603625" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(11).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>NeRF-VINS：A Real-time Neural Radiance Field Map-based Visual-InertialNavigation</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2309.09295.pdf" rel="nofollow" title="NeRF-VINS：A Real-time Neural Radiance Field Map-based Visual-InertialNavigation System">NeRF-VINS：A Real-time Neural Radiance Field Map-based Visual-InertialNavigation System</a></p> 
 <p>这项工作是OpenVINS的扩展（huangguoquan老师团队的工作），首先离线训练NeRF，然后基于NeRF地图进行定位和导航。充分利用NeRF新视角合成的能力，处理有限视角和回环问题（感觉更像是用NeRF来做回环匹配中的一环，其余应该就是原本的Open-VINS），实现基于NeRF地图的定位和导航规划。同时要求整个系统可以在嵌入式设备上运行。</p> 
 <p>传统的基于关键帧进行定位的策略，由于FOV较小，容易陷入局部优化，因此效果比较差。因此本文提出了基于NeRF的VINS，采用基于滤波的优化框架来处理单目image、IMU以及NeRF合成的地图。同时可以pose estimation的频率可达15HZ（在Jetson AGX平台上）。</p> 
@@ -1116,12 +1068,7 @@
 <h2 id="%E4%BD%8D%E5%A7%BF%E5%92%8CNeRF%E8%81%94%E5%90%88%E4%BC%98%E5%8C%96"><a name="t16"></a>位姿和NeRF联合优化</h2> 
 <p>将位姿和NeRF放到一起优化，也就是SLAM中的localization与mapping。在NeRF SLAM应用里，位姿和NeRF联合优化是最主要的方向</p> 
 <h3 id="iMAP"><a name="t17"></a>iMAP</h3> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;GSpwDZEb-1702972616071&quot;}}"> 
-  <iframe id="GSpwDZEb-1702972616071" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(12).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>iMAP：Implicit Mapping and Positioning in Real-Time</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2103.12352.pdf" rel="nofollow" title="iMAP：Implicit Mapping and Positioning in Real-Time">iMAP：Implicit Mapping and Positioning in Real-Time</a></p> 
 <p><a href="https://github.com/tymoteuszb/implicit-slam" title="论文主页">论文主页</a></p> 
 <p>这是首个基于RGB-D相机，用MLP做场景表征实时SLAM系统。传统的稠密建图<a href="https://so.csdn.net/so/search?q=SLAM&amp;spm=1001.2101.3001.7020" title="SLAM">SLAM</a>使用占用栅格图 occupancy map 或者 signed distance function 做场景表征，占用的内存空间很大；为此，论文提出利用一个MLP网络达到了整个场景的表征，然后给定相机视野，可以恢复给定角度下的图片。 因此，在保存地图时，不需要再保存整个房间的稠密的点云了，只需保存1M的网络参数。 甚至可以渲染房间各个地方的视野。&nbsp;</p> 
@@ -1142,12 +1089,7 @@
 <p class="img-center"><img alt="" height="316" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/a0ca1959eb91fc17c7f55b57154a4d46.png" width="437"></p> 
 <p></p> 
 <h3 id="BARF"><a name="t18"></a>BARF</h3> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;JFLJ70dr-1702972641216&quot;}}"> 
-  <iframe id="JFLJ70dr-1702972641216" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(13).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>BARF：Bundle-Adjusting Neural Radiance Fields</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2104.06405.pdf" rel="nofollow" title="BARF：Bundle-Adjusting Neural Radiance Fields">BARF：Bundle-Adjusting Neural Radiance Fields</a></p> 
 <p><a href="https://chenhsuanlin.bitbucket.io/bundle-adjusting-NeRF/" rel="nofollow" title="论文主页">论文主页</a></p> 
 <p>传统的NeRF训练需要非常精确的位姿，而NeRF SLAM反向传播优化位姿时，对位姿初值很敏感，容易陷入局部最优。本文提出了Bundle-Adjusting NeRF (BARF) ，可以用不完美的（甚至不知道）相机位姿进行训练，同时学习三维表示（reconstruction，就是mapping）和配准相机帧（registration，也就是localization）。对于传统的sfm或者SLAM问题，就是把定位与建图用BA来进行处理计算的，因此，这篇文章也将BA引入NeRF SLAM的工作，给定不完美的位姿也可以训练NeRF。主要工作是应用传统图像对齐理论（image alignment）来联合优化位姿和NeRF，并且提出一个由粗到精的策略来优化位姿，使其对位置编码的噪声不敏感。</p> 
@@ -1194,12 +1136,7 @@
 <p></p> 
 <p></p> 
 <h3 id="NICE-SLAM"><a name="t20"></a>NICE-SLAM</h3> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;E9ySoRC7-1702972705674&quot;}}"> 
-  <iframe id="E9ySoRC7-1702972705674" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(14).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>NICE-SLAM：Neural Implicit Scalable Encoding for SLAM</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2112.12130.pdf" rel="nofollow" title="NICE-SLAM：Neural Implicit Scalable Encoding for SLAM">NICE-SLAM：Neural Implicit Scalable Encoding for SLAM</a></p> 
 <p><a href="https://pengsongyou.github.io/nice-slam" rel="nofollow" title="论文主页">论文主页</a></p> 
 <p>现有的NeRF-SLAM由于仅仅采用全连接层，没有包含局部的信息（比如iMAP仅仅有一个MLP来代表整个场景）。具有以下问题：</p> 
@@ -1220,12 +1157,7 @@
 <p class="img-center"><img alt="" height="286" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/7c64d423618ce0365aaf17750ad76192.png" width="385"></p> 
 <p></p> 
 <h3 id="Vox-Fusion"><a name="t21"></a>Vox-Fusion</h3> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;C8xoW57Q-1702972717691&quot;}}"> 
-  <iframe id="C8xoW57Q-1702972717691" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(15).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>Vox-Fusion：Dense Tracking and Mapping with Voxel-based Neural ImplicitRepresenta</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2210.15858.pdf" rel="nofollow" title="Vox-Fusion：Dense Tracking and Mapping with Voxel-based Neural ImplicitRepresentation">Vox-Fusion：Dense Tracking and Mapping with Voxel-based Neural ImplicitRepresentation</a></p> 
 <p><a href="https://github.com/zju3dv/Vox-Fusion" title="论文主页">论文主页</a></p> 
 <p>传统的NeRF使用单个MLP，所以难以表达几何细节，并且很难扩展到大场景。将NeRF与稀疏体素网格（volumetric fusion methods，采用voxel-based neural implicit surface representation来渲染每个voxel中的场景）结合，使用八叉树结合莫顿码实现体素的快速分配和检索。同时，再通过多线程技术来实现实时。</p> 
@@ -1241,12 +1173,7 @@
 <p class="img-center"><img alt="" height="235" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/cd9c01413aa73104ee87f5ac17e07650.png" width="748"></p> 
 <p></p> 
 <h3 id="NoPe-NeRF"><a name="t22"></a>NoPe-NeRF</h3> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;Ml3UUwap-1702972736049&quot;}}"> 
-  <iframe id="Ml3UUwap-1702972736049" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(16).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>NoPe-NeRF：Optimising Neural Radiance Field with No Pose Prior</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2212.07388.pdf" rel="nofollow" title="NoPe-NeRF：Optimising Neural Radiance Field with No Pose Prior">NoPe-NeRF：Optimising Neural Radiance Field with No Pose Prior</a></p> 
 <p><a href="https://nope-nerf.active.vision/" rel="nofollow" title="论文主页">论文主页</a></p> 
 <p>虽然已经有好些用NeRF来联合优化pose与map的工作了，但是在相机运动较大（dramatic camera movement，等同于large camera motion）时还是存在挑战。因此，本文引入无畸变单目深度先验（undistorted monocular depth priors），它是通过在训练期间校正尺度和平移参数生成的，从而能够约束连续帧之间的相对姿态，同时构建新的loss function来实现这一约束。</p> 
@@ -1268,12 +1195,7 @@
 <p class="img-center"><img alt="" height="440" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/fffb19f9b1af981c864064ac375e9f1d.png" width="961"></p> 
 <p></p> 
 <h3 id="RoDynRF"><a name="t23"></a>RoDynRF</h3> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;U4WSBJcQ-1702972749193&quot;}}"> 
-  <iframe id="U4WSBJcQ-1702972749193" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(17).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>Robust Dynamic Radiance Fields</p> 
- </div> 
-</div> 
+
 <p><a href="https://arxiv.org/pdf/2301.02239.pdf" rel="nofollow" title="Robust Dynamic Radiance Fields">Robust Dynamic Radiance Fields</a></p> 
 <p><a href="https://robust-dynrf.github.io/" rel="nofollow" title="RoDynRF: Robust Dynamic Radiance Fields">RoDynRF: Robust Dynamic Radiance Fields</a></p> 
 <p>本身这篇文章研究的是动态NeRF（就是场景是动态的，里面有运动物体。但看论文里的图，估计也只支持小范围内的动态NeRF，并不支持大场景），但是和NeR--一样都可以在没有位姿和内参的情况下联合优化位姿和NeRF（但NeRF--只能用于静态环境），所以也算是NeRF SLAM的一种。</p> 
@@ -1306,12 +1228,7 @@
 <h3 id="Orbeez-SLAM"><a name="t25"></a>Orbeez-SLAM</h3> 
 <p><a href="https://arxiv.org/pdf/2209.13274.pdf" rel="nofollow" title="Orbeez-SLAM：A Real-time Monocular Visual SLAM with ORB Features and NeRF-realized Mapping">Orbeez-SLAM：A Real-time Monocular Visual SLAM with ORB Features and NeRF-realized Mapping</a></p> 
 <p><a href="https://github.com/MarvinChung/Orbeez-SLAM" title="论文主页">论文主页</a></p> 
-<div> 
- <div class="csdn-video-box" data-report-view="{&quot;spm&quot;:&quot;3001.10261&quot;,&quot;extra&quot;:{&quot;id&quot;:&quot;LTfalCQj-1702994774694&quot;}}"> 
-  <iframe id="LTfalCQj-1702994774694" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(18).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>Orbeez-SLAM：A Real-time Monocular Visual SLAM with ORB Features and NeRF-realize</p> 
- </div> 
-</div> 
+
 <p>这是一篇传统SLAM和NeRF结合很好的一篇文章，使用的是ORB-SLAM2和InstantNGP的组合方案，同样不需要深度信息。跟踪和建图同时运行，首先使用ORB-SLAM2 进行跟踪获取pose。mapping线程会通过三角化产生map points（稀疏的点云）以及联合pose一起做BA优化。如果定位精度较高并且建图线程不繁忙则添加为关键帧，再用map points和位姿去训练NeRF（Instant-NGP，NeRF的改进版可以提升traing speed）。同时通过NeRF的光度误差来进一步的优化pose。实际上，这一framework可以用于任何可以提供稀疏点云的SLAM（这一点个人认为是很好的inspiration）。</p> 
 <p class="img-center"><img alt="" height="390" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/5548af743ac51abf14b85622acbf6936.png" width="948"></p> 
 <p>很多NeRF SLAM需要针对每个新场景重新训练，实际应用要求SLAM具备泛化性（<span style="color:#000000;">without pre-training and generates dense maps for downstream tasks in real-time</span>）。传统SLAM可以在NeRF训练初期提供较为准确的位姿，使其没有深度信息也可以快速收敛。作者宣称可以比NICE-SLAM快800倍（360~800）。至于所谓的pre-training-free准确来说应该是the training process is online and real-time without pre-training。</p> 
@@ -1323,12 +1240,7 @@
 <h3 id="GO-SLAM"><a name="t26"></a>GO-SLAM</h3> 
 <p><a href="https://arxiv.org/pdf/2309.02436.pdf" rel="nofollow" title="GO-SLAM：Global Optimization for Consistent 3D Instant Reconstruction">GO-SLAM：Global Optimization for Consistent 3D Instant Reconstruction</a></p> 
 <p><a href="https://youmi-zym.github.io/projects/GO-SLAM/" rel="nofollow" title="论文主页">论文主页</a></p> 
-<div> 
- <div class="csdn-video-box"> 
-  <iframe id="8gKDq5MN-1702994796213" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(19).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>GO-SLAM：Global Optimization for Consistent 3D Instant Reconstruction</p> 
- </div> 
-</div> 
+
 <p>NeRF SLAM定位精度较低，且重建的时候存在失真。因此GO-SLAM使用BA和回环来优化全局的位姿，同时实现实时的重建。GO-SLAM本身是基于DROID-SLAM和Instant-NGP的组合（有点类似与前面的Orbeez-SLAM，只不过上面用的是ORB-SLAM2+Instan-NGP），主要工作是引入了BA和回环模块。GO-SLAM由三个并行线程组成：前端跟踪、后端跟踪，以及实例建图。GOSLAM的前端跟踪线程是直接用的DROID-SLAM的跟踪模块，后面训练过程也是直接调用DROID-SLAM的预训练权重，只不过加入了新的回环和BA优化。然后使用RAFT来计算新一帧相对于最后一个关键帧的光流，如果平均流大于阈值，则创建新关键帧。后端跟踪线程的重点是通过全BA生成全局一致的位姿和深度预测。最后，实例建图线程根据最新的位姿信息实时更新三维重建。GO-SLAM的输入支持单目、双目与RGBD。</p> 
 <p class="img-center"><img alt="" height="482" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/2f2b78aeca3a098c359175bed12ecde0.png" width="827"></p> 
 <p>GO-SLAM主要还是基于NeRF进行稠密重建，可以发现相较于NICE-SLAM这些SOTA方案，GO-SLAM重建场景的全局一致性更好，这主要是因为它引入了回环和全局BA来优化累计误差。对比效果如下所示，虽然单目的效果好像比较差，但是RGBD的重建效果比其他的几个算法都要好上不少~</p> 
@@ -1344,12 +1256,7 @@
 <p></p> 
 <h3 id="NICER-SLAM"><a name="t27"></a>NICER-SLAM</h3> 
 <p><a href="https://arxiv.org/pdf/2302.03594.pdf" rel="nofollow" title="NICER-SLAM：Neural Implicit Scene Encoding for RGB SLAM">NICER-SLAM：Neural Implicit Scene Encoding for RGB SLAM</a></p> 
-<div> 
- <div class="csdn-video-box"> 
-  <iframe id="q4fqBkHg-1702994820568" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(20).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>NICER-SLAM：Neural Implicit Scene Encoding for RGB SLAM</p> 
- </div> 
-</div> 
+
 <p>这是NICE-SLAM的升级版，由RGBD输入改为了RGB输入。RGB数据没有深度信息，无法产生高质量的NeRF渲染结果。因此，论文引入了单目深度估计进行监督，同时还引入了warping loss来保证几何结构的一致性，此外还为SDF表征建立分层神经隐式编码。</p> 
 <p class="img-center"><img alt="" height="506" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/939c79d73b0d7b1874237fadfb95eaa7.png" width="1037"></p> 
 <p>NICER-SLAM以RGB流作为输入，并输出相机位姿，以及学习的几何和颜色的分层场景表示。实际上是在NICE-SLAM的基础上引入单目深度估计，同时融合了重建、颜色、位姿、光流、warping-loss、深度、Eikonal Loss损失等等。其实这篇文章的启发意义不大，但是证明了引入各种各种的损失可以提升性能（CV或者learning的常规操作~）。</p> 
@@ -1362,12 +1269,7 @@
 <h3 id="Co-SLAM"><a name="t28"></a>Co-SLAM</h3> 
 <p><a href="https://arxiv.org/pdf/2304.14377.pdf" rel="nofollow" title="Co-SLAM：Joint Coordinate and Sparse Parametric Encodings for Neural Real-Time SLAM">Co-SLAM：Joint Coordinate and Sparse Parametric Encodings for Neural Real-Time SLAM</a></p> 
 <p><a href="https://hengyiwang.github.io/projects/CoSLAM" rel="nofollow" title="论文主页">论文主页</a></p> 
-<div> 
- <div class="csdn-video-box"> 
-  <iframe id="HE5OatdP-1702994845782" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(21).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>Co-SLAM：Joint Coordinate and Sparse Parametric Encodings for Neural Real-Time SL</p> 
- </div> 
-</div> 
+
 <p>Co-SLAM将场景表示为多分辨率哈希网格，以利用其高收敛速度和表示高频局部特征的能力。此外，Co-SLAM结合了one-blob编码，以促进未观察区域的表面一致性和补全。这种联合参数坐标编码通过将快速收敛和表面孔填充这两方面的优点结合起来，实现了实时性和鲁棒性。此外，通过射线采样策略允许Co-SLAM在所有关键帧上执行全局BA，而不是像其它的神经SLAM方法那样需要关键帧选择来维持少量活动关键帧。</p> 
 <p>1、使用one-blob编码提高哈希编码的连续性。从而保证了表面的完整性（smoothness and coherence，fast convergence and surface hole filling）</p> 
 <p>2、在所有关键帧上采样来训练NeRF（进行全局的BA优化），而不是像NICE-SLAM那样维护一个关键帧列表。</p> 
@@ -1387,12 +1289,7 @@
 <h3 id="LiDAR-NeRF"><a name="t30"></a>LiDAR-NeRF</h3> 
 <p><a href="https://arxiv.org/pdf/2304.10406.pdf" rel="nofollow" title="LiDAR-NeRF：Novel LiDAR View Synthesis via Neural Radiance Fields">LiDAR-NeRF：Novel LiDAR View Synthesis via Neural Radiance Fields</a></p> 
 <p><a href="https://tangtaogo.github.io/lidar-nerf-website/" rel="nofollow" title="论文主页">论文主页</a></p> 
-<div> 
- <div class="csdn-video-box"> 
-  <iframe id="ktnZiNuT-1702994913243" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(22).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>LiDAR-NeRF：Novel LiDAR View Synthesis via Neural Radiance Fields</p> 
- </div> 
-</div> 
+
 <p>该工作提出第一个可微框架用于LiDAR新视图合成（differentiable end-to-end LiDAR rendering framework）；本论文意在给定一个物体的多个LiDAR 视角，可以从任意的视角下的点云对物体进行渲染（学习3D点云的几何结构以及特征信息）。然而，传统的NeRF不能直接作用于点云（由于它只关注于学习独立的pixel而忽略局部信息，准确来说应该是只有photometric loss这对于点云是不适用的），而模拟器产生的却不够真实。</p> 
 <p>因此，首先将LiDAR点云转换为Range图像，在不同的视图中会突出显示一个对象以便于可视化。然后在每个伪像素上生成距离（x、y、深度）、强度（反射光强）和射线下降概率（ray-drop）的三维表示。通过利用多视图一致性的三维场景，以帮助网络产生准确的几何形状。注意，LiDAR-NeRF还会 学习LiDAR模型的物理性质，例如地面主要表现为连续的直线。同时，作者还提出一种结构正则化方法，以有效保持局部结构细节，从而引导模型更精确的几何估计；建立NeRF-MVL数据集，以评估以对象为中心的新LiDAR视图合成。</p> 
 <p class="img-center"><img alt="" height="572" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/d4cbcfcf9c20dc761d7dbd3ffcc8155a.png" width="977"></p> 
@@ -1444,12 +1341,7 @@
 <h3 id="LONER%C2%A0"><a name="t33"></a>LONER&nbsp;</h3> 
 <p><a href="https://arxiv.org/pdf/2309.04937.pdf" rel="nofollow" title="LONER：LiDAR Only Neural Representations for Real-Time SLAM">LONER：LiDAR Only Neural Representations for Real-Time SLAM</a></p> 
 <p><a href="https://umautobots.github.io/loner" rel="nofollow" title="论文主页">论文主页</a></p> 
-<div> 
- <div class="csdn-video-box"> 
-  <iframe id="ZPBTjxTG-1702994978581" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(23).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
-  <p>LONER：LiDAR Only Neural Representations for Real-Time SLAM</p> 
- </div> 
-</div> 
+
 <p>这是第一个可以实时的LiDAR-based NeRF-SLAM框架。LONER首先将雷达扫描降采样（将为5 Hz），然后用ICP跟踪（point-to-plane，相当于只用NeRF做mapping），并从场景几何中分割出天空区域。对于建图线程，是使用当前关键帧和随机选择的过去关键帧来更新，并维护一个滑窗来优化。跟踪和建图两个线程并行运行，但是建图线程的帧率较低，并准备关键帧用来训练NeRF。最后使用专门设计的损失函数（information-theoretic loss function）来更新位姿和MLP权重，生成的隐式地图可以离线渲染为各种格式，比如深度图和Mesh。</p> 
 <p class="img-center"><img alt="" height="288" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/2f1df76130a1fd0fa3b7b635b2906aaa.png" width="941"></p> 
 <p>接下来看看实验。首先是一个跟NICE-SLAM和Lego-LOAM的精度对比，LONER的精度明显优于LeGO-LOAM，这个还挺惊讶的，因为本身LONER没有为SLAM设计什么特殊的模块。而NICE-SLAM的精度明显比其他两个低，还容易跟丢，这也很容易理解，因为NICE-SLAM本身 就是为室内场景设计的。这个实验也证明了LONER自身的损失函数是有效的。</p> 
@@ -1465,10 +1357,7 @@
 <p>此处主要看看下面两篇论文</p> 
 <p><a class="link-info" href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_high.pdf" rel="nofollow" title="1. 3D Gaussian Splatting for Real-Time Radiance Field Rendering">1. 3D Gaussian Splatting for Real-Time Radiance Field Rendering</a></p> 
 <p><a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/" rel="nofollow" title="论文主页">论文主页</a></p> 
-<div class="csdn-video-box"> 
- <iframe id="oTqK7xdx-1703824923525" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(24).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
- <p>3D Gaussian Splatting for Real-Time Radiance Field Rendering</p> 
-</div> 
+
 <p>论文引入新方法实现了NeRF的实时渲染，能够在较少的训练时间中，实现SOTA级别的视觉效果，且可以以 1080p 分辨率进行高质量的实时（≥ 30 fps）新视图合成。具体而言，即从已有点云模型出发，以每个点为中心，建立可学习的3D高斯表达，用Splatting的方法进行渲染，实现了高分辨率的实时渲染，其中包含三个关键步骤：</p> 
 <ol><li> <p>3D高斯场景表示：从相机校准过程中产生的稀疏点开始，用3D高斯（3D Gaussians）表示场景，3D高斯保留连续体积辐射场的理想属性以进行场景优化，同时避免了在空白空间中进行不必要的计算。</p> </li><li> <p>交错优化和密度控制：对3D高斯各种属性（如位置、不透明度、各向异性协方差和球面谐波系数）进行了交错优化/密度控制，特别优化了各向异性协方差（anisotropic covariance）以实现场景的准确表示。</p> </li><li> <p>快速可见性感知渲染算法：开发了一种快速可见性感知渲染算法（fast visibility-aware rendering algorithm），该算法支持各向异性抛雪球（anisotropic splatting），既能加速训练，又能保持高质量进行实时渲染。</p> </li></ol> 
 <p>这里所谓的<strong>各向异性（anisotropic）</strong>：指的是从各个方向上看过去，物体的外观表现都不同。而<strong>抛雪球（splatting）</strong>：是计算机图形学中用三维点进行渲染的方法，该方法将三维点视作雪球往图像平面上抛，雪球在图像平面上会留下扩散痕迹，这些点的扩散痕迹叠加在一起就构成了最后的图像，是一种针对点云的渲染方法。</p> 
@@ -1490,10 +1379,7 @@
 <p></p> 
 <p><a class="link-info" href="https://arxiv.org/pdf/2312.02126.pdf" rel="nofollow" title="2. SplaTAM: Splat, Track &amp; Map 3D Gaussians for Dense RGB-D SLAM">2.&nbsp;SplaTAM: Splat, Track &amp; Map 3D Gaussians for Dense RGB-D SLAM</a></p> 
 <p><a class="link-info" href="https://spla-tam.github.io/" rel="nofollow" title="论文主页">论文主页</a></p> 
-<div class="csdn-video-box"> 
- <iframe id="ySV7NCs5-1703825010531" frameborder="0" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/player(25).html" allowfullscreen="true" data-mediaembed="bilibili"></iframe> 
- <p>SplaTAM Splat, Track Map 3D Gaussians for Dense RGB-D SLAM</p> 
-</div> 
+
 <p></p> 
 <p></p> 
 <blockquote> 
@@ -2367,221 +2253,7 @@ https://devendrachaplot.github.io/projects/Ne</div>
         type: 2
     }
 </script>          </main>
-<aside class="blog_container_aside" style="position: fixed; bottom: 0px; z-index: 99; left: 459.5px; width: 300px; top: auto;">
-<!-- <div id="asideProfile" class="aside-box active">
-    <div class="profile-intro d-flex">
-        <div class="avatar-box d-flex justify-content-center flex-column">
-            <a href="https://blog.csdn.net/gwplovekimi" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_379&quot;,&quot;spm&quot;:&quot;3001.4121&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi&quot;,&quot;ab&quot;:&quot;new&quot;}">
-                <img src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/fc0aaf8b09fd483e85651d060409c695_gwplovekimi.jpg!1" class="avatar_pic">
-            </a>
-        </div>
-        <div class="user-info d-flex flex-column profile-intro-name-box">
-            <div class="profile-intro-name-boxTop">
-                <a href="https://blog.csdn.net/gwplovekimi" target="_blank" class="" id="uid" title="gwpscut" data-report-click="{&quot;mod&quot;:&quot;popu_379&quot;,&quot;spm&quot;:&quot;3001.4122&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi&quot;,&quot;ab&quot;:&quot;new&quot;}">
-                    <span class="name" username="gwplovekimi">gwpscut</span>
-                </a>
-            </div>
-            <div class="profile-intro-name-boxFooter-new">
-              <p class="profile-intro-name-leve">
-                <span>
-                  博客等级
-                </span>
-                  <img class="level" src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/blog7.png">
-              </p>
-                <span class="profile-intro-name-years" title="已加入 CSDN 11年">码龄11年</span>
-               
-            </div>
-        </div>
-    </div>
-    <div class="profile-intro-rank-information">
-      <dl>
-        <a href="https://blog.csdn.net/gwplovekimi" data-report-click="{&quot;mod&quot;:&quot;1598321000_001&quot;,&quot;spm&quot;:&quot;3001.4310&quot;}" data-report-query="t=1">  
-            <dd><span>439</span></dd>
-            <dt>原创</dt>
-        </a>
-      </dl>
-       <dl title="3380">
-        <dd>3380</dd>
-        <dt>点赞</dt>
-      </dl>
-       <dl title="17409">
-        <dd>1万+</dd>
-        <dt>收藏</dt>
-      </dl>
-      <dl id="fanBox" title="3670">
-        <dd><span id="fan">3670</span></dd>
-        <dt>粉丝</dt>
-      </dl>
-    </div>
-</div> -->
-      <!-- <div class="swiper-slide-box-remuneration">
-        <a data-report-click="{&quot;spm&quot;:&quot;3001.9728&quot;,&quot;extra&quot;:{&quot;index&quot;:&quot;0&quot;}}" href="https://ai.csdn.net/" target="_blank">
-          <img src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/6363a50105a943849c49eb4e3e5a3092.png" alt="">
-        </a>
-      </div> -->
 
-
-
-<!-- <div id="asideCategory" class="aside-box ">
-    <h3 class="aside-title">分类专栏</h3>
-    <div class="aside-content">
-        <ul>
-            <li>
-                <a class="clearfix special-column-name" href="https://blog.csdn.net/gwplovekimi/category_12633639.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/category_12633639.html&quot;,&quot;ab&quot;:&quot;new&quot;}">
-                    <div class="special-column-bar "></div>
-                    <img src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/b9346faac8287efffed28c8b2d898da7(1).png" alt="" onerror="this.src=&#39;https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64&#39;">
-                    <span class="title oneline">
-                        3D Gaussian Splatting (3DGS)
-                    </span>
-                </a>
-                <span class="special-column-num">17篇</span>
-            </li>
-            <li>
-                <a class="clearfix special-column-name" href="https://blog.csdn.net/gwplovekimi/category_9361572.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/category_9361572.html&quot;,&quot;ab&quot;:&quot;new&quot;}">
-                    <div class="special-column-bar "></div>
-                    <img src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/586dad44b33c654c8f94450ee15b9265.png" alt="" onerror="this.src=&#39;https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64&#39;">
-                    <span class="title oneline">
-                        ROS
-                    </span>
-                </a>
-                <span class="special-column-num">147篇</span>
-            </li>
-            <li>
-                <a class="clearfix special-column-name" href="https://blog.csdn.net/gwplovekimi/category_9860500.html" data-report-click="{&quot;mod&quot;:&quot;popu_537&quot;,&quot;spm&quot;:&quot;3001.4137&quot;,&quot;strategy&quot;:&quot;pc付费专栏左侧入口&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/category_9860500.html&quot;,&quot;ab&quot;:&quot;new&quot;}">
-                    <div class="special-column-bar "></div>
-                    <img src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/f9e5dc48891ae58afd67623c027982e4.png" alt="" onerror="this.src=&#39;https://i-blog.csdnimg.cn/columns/default/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64&#39;">
-                    <span class="title oneline">
-                        Android
-                    </span>
-                </a>
-                <span class="special-column-num">50篇</span>
-            </li>
-        </ul>
-    </div>
-</div> -->
-<!-- <div id="asideNewComments" class="aside-box">
-    <h3 class="aside-title">最新评论</h3>
-    <div class="aside-content">
-        <ul class="newcomment-list">
-            <li>
-                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/gwplovekimi/article/details/137587778#comments_36518856" data-report-click="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/article/details/137587778#comments_36518856&quot;,&quot;ab&quot;:&quot;new&quot;}">实验笔记之——RGBD GS-ICP SLAM配置与测试</a>
-                <p class="comment ellipsis">
-                    <a href="https://blog.csdn.net/weixin_42269064" class="user-name" target="_blank">zttsm: </a>
-                    <span class="code-comments">不要固定torchvision和torchaudio的版本：conda install pytorch==2.0.0 torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia</span>
-                </p>
-            </li>
-            <li>
-                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/gwplovekimi/article/details/137587778#comments_36518852" data-report-click="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/article/details/137587778#comments_36518852&quot;,&quot;ab&quot;:&quot;new&quot;}">实验笔记之——RGBD GS-ICP SLAM配置与测试</a>
-                <p class="comment ellipsis">
-                    <a href="https://blog.csdn.net/weixin_42269064" class="user-name" target="_blank">zttsm: </a>
-                    <span class="code-comments">不要固定torchvision和torchaudio的版本：conda install pytorch==2.0.0 torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia</span>
-                </p>
-            </li>
-            <li>
-                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/gwplovekimi/article/details/115395686#comments_36501663" data-report-click="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/article/details/115395686#comments_36501663&quot;,&quot;ab&quot;:&quot;new&quot;}">ROS实验笔记之——基于Prometheus自主无人机开源项目的学习与仿真</a>
-                <p class="comment ellipsis">
-                    <a href="https://blog.csdn.net/weixin_61897906" class="user-name" target="_blank">邢邢好吧（前端学习中）: </a>
-                    <span class="code-comments">你好，我编译Prometheus的时候一直报错找不到文件，我都是直接git clone 的，这是为啥啊</span>
-                </p>
-            </li>
-            <li>
-                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/gwplovekimi/article/details/120383451#comments_36461255" data-report-click="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/article/details/120383451#comments_36461255&quot;,&quot;ab&quot;:&quot;new&quot;}">ROS仿真笔记之——gazebo配置velodyne</a>
-                <p class="comment ellipsis">
-                    <a href="https://blog.csdn.net/balbalawyh" class="user-name" target="_blank">balbalawyh: </a>
-                    <span class="code-comments">你好，请问如何下载libgazebo_ros_velody.so</span>
-                </p>
-            </li>
-            <li>
-                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/gwplovekimi/article/details/136513164#comments_36460107" data-report-click="{&quot;mod&quot;:&quot;popu_542&quot;,&quot;spm&quot;:&quot;3001.4231&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/article/details/136513164#comments_36460107&quot;,&quot;ab&quot;:&quot;new&quot;}">实验笔记之——Gaussian Splatting SLAM （MonoGS）配置与测试</a>
-                <p class="comment ellipsis">
-                    <a href="https://blog.csdn.net/Flipped0" class="user-name" target="_blank">Flipped0: </a>
-                    <span class="code-comments">我在运行3dgs的时候也有这个问题，simple-knn和diff一直装不上，后来说是visual版本换了就好了，visual的版本除了年份还有后缀的版本号的。就是那个的问题，可以在visual里面看到，vs2019.11.什么之类的，然后就是那个,我换成2019 16.11.44就能安装上了。</span>
-                </p>
-            </li>
-        </ul>
-    </div>
-</div>
-<div id="asideHotArticle" class="aside-box">
-	<h3 class="aside-title">大家在看</h3>
-	<div class="aside-content">
-		<ul class="hotArticle-list">
-			<li>
-				<a href="https://blog.csdn.net/SO_zxn/article/details/146262421" target="_blank" data-report-click="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/SO_zxn/article/details/146262421&quot;,&quot;strategy&quot;:&quot;202_1052723-2550219_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}">
-				提示词模板
-					<img src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/readCountWhite.png" alt="">
-					<span class="read">221</span>
-        </a>
-			</li>
-			<li>
-				<a href="https://blog.csdn.net/Vaclee/article/details/146296959" target="_blank" data-report-click="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/Vaclee/article/details/146296959&quot;,&quot;strategy&quot;:&quot;202_1052723-2550216_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}">
-				N皇后问题——dfs解法(回溯+减枝+深搜)
-					<img src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/readCountWhite.png" alt="">
-					<span class="read">2</span>
-        </a>
-			</li>
-			<li>
-				<a href="https://blog.csdn.net/qq_26226783/article/details/146296479" target="_blank" data-report-click="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/qq_26226783/article/details/146296479&quot;,&quot;strategy&quot;:&quot;202_1052723-2550057_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}">
-				深度学习 Deep Learning 第3章 概率论与信息论
-					<img src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/readCountWhite.png" alt="">
-					<span class="read">216</span>
-        </a>
-			</li>
-			<li>
-				<a href="https://blog.csdn.net/m0_62344805/article/details/146296499" target="_blank" data-report-click="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/m0_62344805/article/details/146296499&quot;,&quot;strategy&quot;:&quot;202_1052723-2550063_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}">
-				【知识图谱】基于知识图谱的智能助教系统-开发经验记录：CORS（跨域资源共享）问题
-					<img src="./学习笔记之——NeRF SLAM（基于神经辐射场的SLAM）-CSDN博客_files/readCountWhite.png" alt="">
-					<span class="read">101</span>
-        </a>
-			</li>
-			<li>
-				<a href="https://blog.csdn.net/qq_45052678/article/details/146235259" target="_blank" data-report-click="{&quot;spm&quot;:&quot;3001.10093&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/qq_45052678/article/details/146235259&quot;,&quot;strategy&quot;:&quot;202_1052723-2550201_RCMD&quot;,&quot;ab&quot;:&quot;new&quot;}">
-				UDS的基本概念和应用场景
-        </a>
-			</li>
-		</ul>
-	</div>
-</div>
-<div id="asideArchive" class="aside-box" style="display:block!important; width:300px;">
-    <h3 class="aside-title">最新文章</h3>
-    <div class="aside-content">
-        <ul class="inf_list clearfix">
-            <li class="clearfix">
-            <a href="https://blog.csdn.net/gwplovekimi/article/details/139436796" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_382&quot;,&quot;spm&quot;:&quot;3001.4136&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/article/details/139436796&quot;,&quot;ab&quot;:&quot;new&quot;}">实验笔记之——DPVO（Deep Patch Visual Odometry）</a>
-            </li>
-            <li class="clearfix">
-            <a href="https://blog.csdn.net/gwplovekimi/article/details/139318740" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_382&quot;,&quot;spm&quot;:&quot;3001.4136&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/article/details/139318740&quot;,&quot;ab&quot;:&quot;new&quot;}">Paper Survey——Dynamic SLAM</a>
-            </li>
-            <li class="clearfix">
-            <a href="https://blog.csdn.net/gwplovekimi/article/details/139318827" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_382&quot;,&quot;spm&quot;:&quot;3001.4136&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi/article/details/139318827&quot;,&quot;ab&quot;:&quot;new&quot;}">Paper Survey——3DGS-SLAM</a>
-            </li>
-        </ul>
-        <div class="archive-bar"></div>
-        <div class="archive-box">
-                <div class="archive-list-item"><a href="https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2024&amp;month=06" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_538&quot;,&quot;spm&quot;:&quot;3001.4138&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2024&amp;month=06&quot;}"><span class="year">2024年</span><span class="num">22篇</span></a></div>
-                <div class="archive-list-item"><a href="https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2023&amp;month=12" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_538&quot;,&quot;spm&quot;:&quot;3001.4138&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2023&amp;month=12&quot;}"><span class="year">2023年</span><span class="num">9篇</span></a></div>
-                <div class="archive-list-item"><a href="https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2022&amp;month=12" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_538&quot;,&quot;spm&quot;:&quot;3001.4138&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2022&amp;month=12&quot;}"><span class="year">2022年</span><span class="num">22篇</span></a></div>
-                <div class="archive-list-item"><a href="https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2021&amp;month=12" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_538&quot;,&quot;spm&quot;:&quot;3001.4138&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2021&amp;month=12&quot;}"><span class="year">2021年</span><span class="num">76篇</span></a></div>
-                <div class="archive-list-item"><a href="https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2020&amp;month=12" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_538&quot;,&quot;spm&quot;:&quot;3001.4138&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2020&amp;month=12&quot;}"><span class="year">2020年</span><span class="num">106篇</span></a></div>
-                <div class="archive-list-item"><a href="https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2019&amp;month=12" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_538&quot;,&quot;spm&quot;:&quot;3001.4138&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2019&amp;month=12&quot;}"><span class="year">2019年</span><span class="num">140篇</span></a></div>
-                <div class="archive-list-item"><a href="https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2018&amp;month=12" target="_blank" data-report-click="{&quot;mod&quot;:&quot;popu_538&quot;,&quot;spm&quot;:&quot;3001.4138&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/gwplovekimi?type=blog&amp;year=2018&amp;month=12&quot;}"><span class="year">2018年</span><span class="num">66篇</span></a></div>
-        </div>
-    </div>
-</div> -->
-    <!-- 详情页显示目录 -->
-<!--文章目录-->
-<div id="asidedirectory" class="aside-box">
-    <div class="groupfile" id="directory">
-        <h3 class="aside-title">目录</h3>
-        <div class="align-items-stretch group_item">
-            <div class="pos-box">
-            <div class="scroll-box">
-                <div class="toc-box"><ol><li class=""><a href="#t0">什么是NeRF？</a></li><li class="sub-box"><ol><li class=""><a href="#t1">NeRF</a></li></ol></li><li><a href="#t2">仅优化NeRF</a></li><li class="sub-box"><ol><li class=""><a href="#t3">NeRF++</a></li><li class=""><a href="#t4">Instant-NGP</a></li><li class=""><a href="#t5">RO-MAP</a></li><li class=""><a href="#t6">vMAP</a></li><li><a href="#t7">Point-NeRF</a></li><li class=""><a href="#t8">NeRF-SLAM&nbsp;</a></li><li class=""><a href="#t9">SMERF</a></li><li class=""><a href="#t10">Nerfies</a></li></ol></li><li><a href="#t11">仅优化位姿</a></li><li class="sub-box"><ol><li><a href="#t12">iNeRF</a></li><li class=""><a href="#t13">NeRF-Loc</a></li><li class=""><a href="#t14">Loc-NeRF</a></li><li class=""><a href="#t15">NeRF-VINS</a></li></ol></li><li><a href="#t16">位姿和NeRF联合优化</a></li><li class="sub-box"><ol><li class=""><a href="#t17">iMAP</a></li><li class=""><a href="#t18">BARF</a></li><li class=""><a href="#t19">NeRF--</a></li><li class=""><a href="#t20">NICE-SLAM</a></li><li class=""><a href="#t21">Vox-Fusion</a></li><li class=""><a href="#t22">NoPe-NeRF</a></li><li class=""><a href="#t23">RoDynRF</a></li><li><a href="#t24">DIM-SLAM</a></li><li><a href="#t25">Orbeez-SLAM</a></li><li class=""><a href="#t26">GO-SLAM</a></li><li class=""><a href="#t27">NICER-SLAM</a></li><li class=""><a href="#t28">Co-SLAM</a></li></ol></li><li class=""><a href="#t29">雷达NeRF SLAM</a></li><li class="sub-box"><ol><li class=""><a href="#t30">LiDAR-NeRF</a></li><li class=""><a href="#t31">IR-MCL</a></li><li class="active"><a href="#t32">NeRF-LOAM</a></li><li class=""><a href="#t33">LONER&nbsp;</a></li></ol></li><li class=""><a href="#t34">3D Gaussian Splatting</a></li><li class=""><a href="#t35">参考文献</a></li></ol></div>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
-</aside>
 <script>
 	$("a.flexible-btn").click(function(){
 		$(this).parents('div.aside-box').removeClass('flexible-box');
